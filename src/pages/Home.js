@@ -4,26 +4,21 @@ import ProblemsTable from "../components/ProblemsTable";
 import SessionCard from "../components/SessionCard";
 import "../styles/Home.css"
 import TopInterviewQuestionPNG from "../assets/images/TopInterviewQuestion.png";
+import DSALeetcode from "../assets/images/DSALeetcode.png"
+import InterviewCrashCourse from "../assets/images/InterviewCrashCourse.jpeg"
 export default function Home() {
   const list = [
     {
-      title: "Orange",
       img: TopInterviewQuestionPNG, 
     },
     {
-      title: "Tangerine",
-      img: TopInterviewQuestionPNG,
-      price: "$3.00",
+      img: DSALeetcode,
     },
     {
-      title: "Raspberry",
-      img: TopInterviewQuestionPNG,
-      price: "$10.00",
+      img: InterviewCrashCourse,
     },
     {
-      title: "Raspberry",
       img: TopInterviewQuestionPNG,
-      price: "$10.00",
     }
   ];
 
@@ -43,10 +38,6 @@ export default function Home() {
                   src={item.img}
                 />
               </CardBody>
-              <CardFooter className="text-small justify-between">
-                <b>{item.title}</b>
-                <p className="text-default-500">{item.price}</p>
-              </CardFooter>
             </Card>
           ))}
         </div>
