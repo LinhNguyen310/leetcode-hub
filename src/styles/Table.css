@@ -1,0 +1,15 @@
+.difficulty-easy {
+  color: green;
+  font-weight:500;
+}
+
+
+.difficulty-medium {
+  color: orange;
+  font-weight:500;
+}
+
+.difficulty-hard {
+  color: rgba(255, 0, 0, 0.541);
+  font-weight:500;
+}

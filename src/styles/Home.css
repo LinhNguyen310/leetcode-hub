@@ -1,0 +1,14 @@
+.home-container {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    gap: 50px;
+  }
+  
+  .main-content {
+    flex: 70%; 
+  }
+  
+  .side-content {
+    flex: 30%; 
+  }

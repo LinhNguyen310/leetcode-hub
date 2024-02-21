@@ -1,0 +1,143 @@
+
+.leetcode_logo {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.nav_bar_container {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid #D1D5DB;
+    z-index: 9999;
+    background-color: #FFFFFF;
+}
+
+.nav_bar_container.dark {
+    border-color: #D1D5DB;
+}
+
+.sub_nav_bar_container {
+    display: none;
+    margin: auto;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+@media (min-width: 768px) {
+    .sub_nav_bar_container {
+        display: flex;
+    }
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: var(--header-height);
+}
+
+.nav__logo {
+    font-size: 1.5rem;
+    transition: color 0.4s;
+    font-size: var(--h2-font-size);
+    font-family: var(--second-font);
+    color: black;
+}
+
+.nav__toggle,
+.nav__close {
+    font-size: 1.5rem;
+    color: black;
+    cursor: pointer;
+}
+
+.nav__cta {
+    background-color: var(--first-color);
+    color: var(--title-color);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    padding: 0.75rem 1.5rem;
+    color: black;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    gap: 60px;
+    list-style: none;
+    flex-grow: 1;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.sub_nav_list {
+    position: relative;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.sub_nav_list_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav__link {
+    color: rgb(136, 136, 136);
+    font-size: 22px;
+    transition: color 0.4s;
+    text-decoration: none;
+    line-height: 22px;
+}
+
+.nav__link:hover {
+    color: var(--first-color);
+}
+
+.nav__close {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+}
+
+.navbar_user_avatar {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.navbar_user_avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+.navbar_user_avatar {
+    cursor: pointer;
+}
+
+.nav__link.active {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 16px;
+    color: black;
+}
+
+.show-menu {
+    right: 0;
+}
