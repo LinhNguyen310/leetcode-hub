@@ -1,17 +1,33 @@
 import React from "react";
-import {Card, CardHeader, CardBody, Image} from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import SessionDonutChart from "./SessionDonutChart";
+import SessionSelectionDropdown from "./SessionSelectionDropdown";
 
 export default function SessionCard() {
   return (
-    <Card className="py-4 mt-5">
-      <CardHeader className="pb-0 pt-2 px-4 flex-col items-start">
-        <p className="text-tiny uppercase font-bold">Daily Mix</p>
-        <small className="text-default-500">12 Tracks</small>
-        <h4 className="font-bold text-large">Frontend Radio</h4>
+    <Card className="py-4">
+      <CardHeader className="flex-col-reverse items-center md:flex-row md:justify-between">
+        <h4 className="font-bold text-large ml-5">Session</h4>
+        <div className="mr-5">
+          <SessionSelectionDropdown />
+        </div>
       </CardHeader>
-      <CardBody className="overflow-visible py-2">
+      <CardBody className="flex-row overflow-visible py-2 flex justify-center items-center">
         <SessionDonutChart />
+        <div className="flex flex-col ml-10 gap-8"> {/* Increased gap with ml-8 */}
+          <div class="flex">
+            <p class="text-green-700">Easy</p>
+            <p>: 70/ 100</p>
+          </div>
+          <div class="flex">
+            <p class="text-orange-400">Medium</p>
+            <p>: 70/ 100</p>
+          </div>
+          <div class="flex">
+            <p class="text-red-500">Hard</p>
+            <p>: 70/ 100</p>
+          </div>
+        </div>
       </CardBody>
     </Card>
   );
