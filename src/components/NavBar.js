@@ -25,17 +25,17 @@ const Navbar = () => {
               </li>
               <li className="nav__item">
                 <NavLink to="/news" className="nav__link">
-                  News
+                  Stat
                 </NavLink>
               </li>
               <li className="nav__item">
                 <NavLink to="/about-us" className="nav__link">
-                  About Us
+                  About Me
                 </NavLink>
               </li>
               <li className="nav__item">
                 <NavLink to="/favorite" className="nav__link">
-                  Favorite
+                  News
                 </NavLink>
               </li>
               <li className="nav__item">
