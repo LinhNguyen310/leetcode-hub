@@ -2,7 +2,10 @@
     display: flex;
     flex-direction: row;
     margin: 30px;
+    margin-left: 200px;
+    margin-right: 200px;
     gap: 50px;
+    
   }
   
   .main-content {

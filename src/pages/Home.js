@@ -9,7 +9,7 @@ import InterviewCrashCourse from "../assets/images/InterviewCrashCourse.jpeg"
 import TagContainer from "../components/TagContainer";
 import FilterContainer from "../components/FilterContainer";
 import Slider from "../components/Slider";
-
+import ChatApp from "../ChatApp";
 export default function Home() {
   const list = [
     {
@@ -52,6 +52,7 @@ export default function Home() {
       </div>
       <div className="side-content">
         <SessionCard />
+        <ChatApp />
       </div>
     </div>
   );
