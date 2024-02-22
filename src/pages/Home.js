@@ -6,6 +6,10 @@ import "../styles/Home.css"
 import TopInterviewQuestionPNG from "../assets/images/TopInterviewQuestion.png";
 import DSALeetcode from "../assets/images/DSALeetcode.png"
 import InterviewCrashCourse from "../assets/images/InterviewCrashCourse.jpeg"
+import TagContainer from "../components/TagContainer";
+import FilterContainer from "../components/FilterContainer";
+import Slider from "../components/Slider";
+
 export default function Home() {
   const list = [
     {
@@ -25,7 +29,8 @@ export default function Home() {
   return (
     <div class="home-container">
       <div className="main-content">
-        <div className="gap-2 grid grid-cols-2 sm:grid-cols-4 mt-20 mb-20">
+        <Slider />
+        <div className="gap-2 grid grid-cols-2 sm:grid-cols-4 mt-5 mb-20">
           {list.map((item, index) => (
             <Card shadow="sm" key={index} isPressable onPress={() => console.log("item pressed")}>
               <CardBody className="overflow-visible p-0">
@@ -41,6 +46,8 @@ export default function Home() {
             </Card>
           ))}
         </div>
+        <TagContainer />
+        <FilterContainer />
         <ProblemsTable />
       </div>
       <div className="side-content">
